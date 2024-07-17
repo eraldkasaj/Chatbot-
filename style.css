@@ -1,80 +1,136 @@
-.chat-container{
-    border-style: ridge;
-    width:fit-content;
+body{
+    background: rgb(152,158,224);
+    background: linear-gradient(63deg, rgba(152,158,224,1) 56%, rgba(157,162,218,1) 100%, rgba(255,255,255,1) 100%);
 }
 
-.chatbot{
-    width:300px;
+.chat-container{
+    width:fit-content;
+    height: max-content;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.chat{
+    width:296px;
     height:400px;
     background-color: rgb(198, 215, 223);
-    border-style: double;
+    border-style:none;
+    border-radius: 20px;
 }
 .chat-header{
-    background-color: rgb(103, 133, 235);
-    height: 50px;
-    
+    background-color:white;
+    height: 60px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .chat-header h3{
-    text-align: center;
-    color:rgb(31, 19, 19);
-    padding-top: 10px;
-    font-size: 25px;
+    color:black;
+    padding-top: 15px;
+    font-weight: bolder;
 }
+
+.chat-header .bi-robot{
+    background-color:#0156f9;
+    color: white;
+    font-size: 27px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+    border-style: none;
+    border-radius:45%;
+    border-color: #0156f9;
+    padding: 6px;
+    }
+
 .chat-body{
     display: flex;
     flex-direction:column;
     justify-content:flex-start; 
+    max-height: 280px;
+    max-width: 300px;
+    overflow-y: auto;
     height: 280px;
     border-bottom-style: solid;
     border-color:grey;
+    border-style: none;
+}
+.chat-bot .bi-robot{
+    background-color: #0156f9;
+    color: white;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #0156f9;
+    font-size: 15px;
+    padding: 3px;
+    margin-right: 5px;
+
 }
 .chat-bot{
-    margin: 20px 0 0 10px;
-    background-color: gray;
+    background-color:rgba(255, 255, 255, 0.618);
     display: flex;
     flex-direction: row;
-    width: 200px;
-    height: 50px;
-    justify-content: space-evenly;
+    width: fit-content;
+    height: min-content;
     align-items: flex-end;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    border-style:inherit;
+    border-color: white;
+    border-radius: 10px 10px 10px 0px;
+    padding: 5px;
+    margin-right: 7px;
+    white-space: normal;
 }
 .chat-user{
-    background-color: rgb(103, 133, 235);
-    width: 220px;
-    height: 50px;
-    text-align: center;
-    margin: 15px 0 0 60px;
+    background-color:#0156f9;
+    list-style: none;
+    width: 200px;
+    width: fit-content;
+    height: min-content;
+    float: right;
+    margin-right: 7px;
+    border-style:inherit;
+    border-radius: 10px 0px 10px 10px;
+    padding: 5px;
+    white-space: normal;
+}
+.text-user{
+    color:aliceblue;
 }
 .chat-input{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color:aquamarine;
+    background-color:white;
+    border-style: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 296px;  
 }
 .chat-input textarea{
-    background-color:aquamarine;
+    background-color:white;
     border-style: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     width: 250px;
-    height: 67px;
-    max-height: 67px;
+    min-height: 59px;
+    max-height: 59px;
     outline: none;
 }
 .send-btn{
     border-style: none;
-    background-color: aquamarine;
+    background-color: white;
+    font-size: 23px;
+    color: gray;
 }
-.send-btn:active{
-    border-style: none;
-    background-color: aquamarine;
-    color: red;
-}
+
 .hide-btn{
     float: right;
     margin-top: 10px;
     border-style:none;
     border-radius: 15px;
     color: white;
-    background-color: rgb(103, 133, 235);
+    background-color: #0156f9;
     font-size: 20px;
 }
 .hide-btn:active{
@@ -82,7 +138,7 @@
     margin-top: 10px;
     border-style:none;
     border-radius: 15px;
-    color: rgb(103, 133, 235);
+    color:#0156f9;
     background-color:black;
     font-size: 20px;
 }
